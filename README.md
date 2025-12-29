@@ -71,11 +71,25 @@ GPU: очень много “легких” ядер/потоков, упор 
 Вывод:
 
 ```
+Sequential Min: 34, Max: 99988  
+Parallel   Min: 34, Max: 99988  
+Sequential time: 49 microseconds
+Parallel time:   80 microseconds 
+```
+--------------------------------------------------------------------------------------------------
+## Задача №3
+Реализация параллельной сортировки выбором с использованием OpenMP.
+В работе реализованы последовательный алгоритм сортировки выбором и его параллельная версия на основе OpenMP.
+Проведено тестирование производительности для массивов размером 1000 и 10000 элементов.
+
+Вывод: 
+
+```
 Array size: 1000     
-Sequential time: 6 ms
-Parallel time: 4 ms  
+Sequential time: 2 ms
+Parallel time: 1 ms  
 
 Array size: 10000      
-Sequential time: 603 ms
-Parallel time: 359 ms  
+Sequential time: 209 ms
+Parallel time: 128 ms  
 ```
